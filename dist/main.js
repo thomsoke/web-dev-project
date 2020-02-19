@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/description/description.js":
+/*!****************************************!*\
+  !*** ./src/description/description.js ***!
+  \****************************************/
+/*! exports provided: generateDescription */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateDescription\", function() { return generateDescription; });\n///////////////////////////////////////////////////////////////\nconst generateDescription = (htmlElement) => {\n  const homepageDescription = document.createElement(\"p\")\n  homepageDescription.id = \"hompage-description\"\n  homepageDescription.innerHTML = \"this is a test description from description.js\"\n  htmlElement.appendChild(homepageDescription)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/description/description.js?");
+
+/***/ }),
+
 /***/ "./src/header/header.js":
 /*!******************************!*\
   !*** ./src/header/header.js ***!
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateSubheader\", function() { return generateSubheader; });\n///////////////////////////////////////////////////////////////\nconst home = {\n  childText: \"home\",\n  className: \"active\",\n  href: \"#home\"\n}\nconst subpage1 = {\n  childText: \"subpage 1\",\n  className: \"\",\n  href: \"http://watertowers.com/\"\n}\nconst subpage2 = {\n  childText: \"subpage 2\",\n  className: \"\",\n  href: \"https://www.tigers-world.com/\"\n}\nconst subpage3 = {\n  childText: \"subpage 3\",\n  className: \"\",\n  href: \"https://www.wikihow.com/Survive-a-Bank-Robbery\"\n}\n\n///////////////////////////////////////////////////////////////\nconst METADATA_ITEMS = [ home, subpage1, subpage2, subpage3 ]\n\n///////////////////////////////////////////////////////////////\nconst generateSubheaderItem = (metadata) => {\n  const { childText, className, href } = metadata\n  const subheaderItem = document.createElement(\"a\")\n\n  subheaderItem.innerHTML = childText\n  subheaderItem.setAttribute(\"class\", className)\n  subheaderItem.setAttribute(\"href\", href)\n\n  return subheaderItem\n}\n\n///////////////////////////////////////////////////////////////\nconst fillSubheaderArray = (metadataItems) => {\n  return metadataItems.map(item => generateSubheaderItem(item))\n}\n\n///////////////////////////////////////////////////////////////\nconst generateSubheader = (htmlElement) => {\n  const subheader = document.createElement(\"div\")\n  subheader.id = \"sub-header\"\n  const subheaderItems = fillSubheaderArray(METADATA_ITEMS)\n  for(let i = 0; i < subheaderItems.length; i++)\n  {\n    htmlElement.appendChild(subheaderItems[i])\n  }\n  console.log(\"after html elem for loop\", htmlElement)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/header/subheader-items.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateSubheader\", function() { return generateSubheader; });\n///////////////////////////////////////////////////////////////\nconst home = {\n  childText: \"home\",\n  className: \"active\",\n  href: \"#home\"\n}\nconst subpage1 = {\n  childText: \"subpage 1\",\n  className: \"\",\n  href: \"http://watertowers.com/\"\n}\nconst subpage2 = {\n  childText: \"subpage 2\",\n  className: \"\",\n  href: \"https://www.tigers-world.com/\"\n}\nconst subpage3 = {\n  childText: \"subpage 3\",\n  className: \"\",\n  href: \"https://www.wikihow.com/Survive-a-Bank-Robbery\"\n}\n\n///////////////////////////////////////////////////////////////\nconst METADATA_ITEMS = [ home, subpage1, subpage2, subpage3 ]\n\n///////////////////////////////////////////////////////////////\nconst generateSubheaderItem = (metadata) => {\n  const { childText, className, href } = metadata\n  const subheaderItem = document.createElement(\"a\")\n\n  subheaderItem.innerHTML = childText\n  subheaderItem.setAttribute(\"class\", className)\n  subheaderItem.setAttribute(\"href\", href)\n\n  return subheaderItem\n}\n\n///////////////////////////////////////////////////////////////\nconst fillSubheaderArray = (metadataItems) => {\n  return metadataItems.map(item => generateSubheaderItem(item))\n}\n\n///////////////////////////////////////////////////////////////\nconst generateSubheader = (htmlElement) => {\n  const subheader = document.createElement(\"div\")\n  subheader.id = \"sub-header\"\n  const subheaderItems = fillSubheaderArray(METADATA_ITEMS)\n\n  for(let i = 0; i < subheaderItems.length; i++)\n  {\n    htmlElement.appendChild(subheaderItems[i])\n  }\n  console.log(\"after html elem for loop\", htmlElement)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/header/subheader-items.js?");
 
 /***/ }),
 
@@ -118,7 +130,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header/header */ \"./src/header/header.js\");\n/* harmony import */ var _header_subheader_items__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header/subheader-items */ \"./src/header/subheader-items.js\");\n///////////////////////////////////////////////////////////////\n\n\n\n///////////////////////////////////////////////////////////////\ndocument.addEventListener('DOMContentLoaded', () => {\n  const title = document.getElementById(\"title-container\")\n  Object(_header_header__WEBPACK_IMPORTED_MODULE_0__[\"generateHeader\"])(title)\n\n  const subheader = document.getElementById(\"navigation\")\n  Object(_header_subheader_items__WEBPACK_IMPORTED_MODULE_1__[\"generateSubheader\"])(subheader)\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header/header */ \"./src/header/header.js\");\n/* harmony import */ var _header_subheader_items__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header/subheader-items */ \"./src/header/subheader-items.js\");\n/* harmony import */ var _description_description__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./description/description */ \"./src/description/description.js\");\n/* harmony import */ var _subtitle_subtitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./subtitle/subtitle */ \"./src/subtitle/subtitle.js\");\n///////////////////////////////////////////////////////////////\n\n\n\n\n\n\n\n\n///////////////////////////////////////////////////////////////\ndocument.addEventListener('DOMContentLoaded', () => {\n  const title = document.getElementById(\"title-container\")\n  Object(_header_header__WEBPACK_IMPORTED_MODULE_0__[\"generateHeader\"])(title)\n\n  const subheader = document.getElementById(\"navigation\")\n  Object(_header_subheader_items__WEBPACK_IMPORTED_MODULE_1__[\"generateSubheader\"])(subheader)\n\n\n  const subtitle = document.getElementById(\"subtitle\")\n  Object(_subtitle_subtitle__WEBPACK_IMPORTED_MODULE_3__[\"generateSubtitle\"])(subtitle)\n\n  const description = document.getElementById(\"description\")\n  Object(_description_description__WEBPACK_IMPORTED_MODULE_2__[\"generateDescription\"])(description)\n\n\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/subtitle/subtitle.js":
+/*!**********************************!*\
+  !*** ./src/subtitle/subtitle.js ***!
+  \**********************************/
+/*! exports provided: generateSubtitle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateSubtitle\", function() { return generateSubtitle; });\n///////////////////////////////////////////////////////////////\nconst generateSubtitle = (htmlElement) => {\n  const pageSubtitle = document.createElement(\"h1\")\n  pageSubtitle.id = \"main-header\"\n  pageSubtitle.innerHTML = \"welcome to the show tracker site\"\n  htmlElement.appendChild(pageSubtitle)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/subtitle/subtitle.js?");
 
 /***/ })
 

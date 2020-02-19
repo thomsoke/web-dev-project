@@ -45,6 +45,7 @@ const generateSubheader = (htmlElement) => {
   const subheader = document.createElement("div")
   subheader.id = "sub-header"
   const subheaderItems = fillSubheaderArray(METADATA_ITEMS)
+
   for(let i = 0; i < subheaderItems.length; i++)
   {
     htmlElement.appendChild(subheaderItems[i])
