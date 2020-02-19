@@ -5,7 +5,7 @@ body {
 }
 
 /* css for main header */
-.title-container {
+#title-container {
   overflow: hidden;
   background-color: #333333;
   font-size: 20px;
@@ -15,12 +15,12 @@ body {
 }
 
 /* css for navigation tabs */
-.navigation {
+#navigation {
   overflow: hidden;
   background-color: #4d4d4d;
 }
 
-.navigation a {
+#navigation a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -29,12 +29,12 @@ body {
   font-size: 17px;
 }
 
-.navigation a:hover {
+#navigation a:hover {
   background-color: #8dd6d2;
   color: white;
 }
 
-.navigation a.active {
+#navigation a.active {
   background-color: #25b8b0;
   color: white;
 }

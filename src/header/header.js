@@ -1,3 +1,4 @@
+///////////////////////////////////////////////////////////////
 const generateHeader = (htmlElement) => {
   const mainHeader = document.createElement("h1")
   mainHeader.id = "main-header"
@@ -5,4 +6,5 @@ const generateHeader = (htmlElement) => {
   htmlElement.appendChild(mainHeader)
 }
 
+///////////////////////////////////////////////////////////////
 export { generateHeader }
