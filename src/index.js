@@ -7,7 +7,8 @@ import { generateDescription } from './description/description'
 import { generateSubtitle } from './subtitle/subtitle'
 
 
-import { showSlides } from './slideshow/slideshow'
+// import { viewSlideshow } from './slideshow/slideshow'
+import { generateSlideshow } from './slideshow/slideshow'
 
 ///////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const description = document.getElementById("description")
   generateDescription(description)
+
+
+
+  // const slideshow = document.getElementById("slideshow")
+  // viewSlideshow(slideshow)
+  const slideshow = document.getElementById("slideshow")
+  generateSlideshow(slideshow)
 
 
 });
