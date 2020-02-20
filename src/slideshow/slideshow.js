@@ -1,5 +1,34 @@
 //
 
+///////////////////////////////////////////////////////////////
+const generateSlideItem = (htmlElement) => {
+  const slideItem = document.createElement("div")   // creates new dom img elem
+
+  slideItem.innerHTML = "<img src='https://i.imgur.com/Z9bgW69.png' alt='this is image'"
+
+  htmlElement.appendChild(slideItem)
+}
+
+///////////////////////////////////////////////////////////////
+// export { generateSlideItem }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// document.getElementById("image-holder").innerHTML = "<img src='image.png' alt='The Image' />";
+//
+//
+//
+//
+
+
+
+
 
 // this is the code that actually RUNS the slideshow
 // image slideshow - automatic
@@ -22,3 +51,6 @@ function showSlides() {
 
 
 export { showSlides }
+
+
+export { generateSlideItem }

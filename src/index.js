@@ -5,6 +5,7 @@ import { generateDescription } from './description/description'
 import { generateSubtitle } from './subtitle/subtitle'
 
 import { showSlides } from './slideshow/slideshow'
+import { generateSlideItem } from './slideshow/slideshow'
 
 ///////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,8 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
   generateDescription(description)
 
 
-  const slideshow = document.getElementById("slideshow")
+  const slideshow = document.getElementById("slideshow-container")
   showSlides(slideshow)
+
+  const slideImage = document.getElementById("slide-img")
+  generateSlideItem(slide-img)
 
 
 });
