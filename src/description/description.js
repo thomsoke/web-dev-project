@@ -1,4 +1,5 @@
 ///////////////////////////////////////////////////////////////
+// *todo* add to constants
 const generateDescription = (htmlElement) => {
   const homepageDescription = document.createElement("p")
   homepageDescription.id = "hompage-description"

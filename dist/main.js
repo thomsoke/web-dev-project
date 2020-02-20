@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateDescription\", function() { return generateDescription; });\n///////////////////////////////////////////////////////////////\nconst generateDescription = (htmlElement) => {\n  const homepageDescription = document.createElement(\"p\")\n  homepageDescription.id = \"hompage-description\"\n  homepageDescription.innerHTML = \"this is a test description from description.js\"\n  htmlElement.appendChild(homepageDescription)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/description/description.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateDescription\", function() { return generateDescription; });\n///////////////////////////////////////////////////////////////\n// *todo* add to constants\nconst generateDescription = (htmlElement) => {\n  const homepageDescription = document.createElement(\"p\")\n  homepageDescription.id = \"hompage-description\"\n  homepageDescription.innerHTML = \"this is a test description from description.js\"\n  htmlElement.appendChild(homepageDescription)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/description/description.js?");
 
 /***/ }),
 
@@ -130,7 +130,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header/header */ \"./src/header/header.js\");\n/* harmony import */ var _header_subheader_items__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header/subheader-items */ \"./src/header/subheader-items.js\");\n/* harmony import */ var _description_description__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./description/description */ \"./src/description/description.js\");\n/* harmony import */ var _subtitle_subtitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./subtitle/subtitle */ \"./src/subtitle/subtitle.js\");\n///////////////////////////////////////////////////////////////\n\n\n\n\n\n\n\n\n///////////////////////////////////////////////////////////////\ndocument.addEventListener('DOMContentLoaded', () => {\n  const title = document.getElementById(\"title-container\")\n  Object(_header_header__WEBPACK_IMPORTED_MODULE_0__[\"generateHeader\"])(title)\n\n  const subheader = document.getElementById(\"navigation\")\n  Object(_header_subheader_items__WEBPACK_IMPORTED_MODULE_1__[\"generateSubheader\"])(subheader)\n\n\n  const subtitle = document.getElementById(\"subtitle\")\n  Object(_subtitle_subtitle__WEBPACK_IMPORTED_MODULE_3__[\"generateSubtitle\"])(subtitle)\n\n  const description = document.getElementById(\"description\")\n  Object(_description_description__WEBPACK_IMPORTED_MODULE_2__[\"generateDescription\"])(description)\n\n\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header/header */ \"./src/header/header.js\");\n/* harmony import */ var _header_subheader_items__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header/subheader-items */ \"./src/header/subheader-items.js\");\n/* harmony import */ var _description_description__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./description/description */ \"./src/description/description.js\");\n/* harmony import */ var _subtitle_subtitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./subtitle/subtitle */ \"./src/subtitle/subtitle.js\");\n/* harmony import */ var _slideshow_slideshow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slideshow/slideshow */ \"./src/slideshow/slideshow.js\");\n///////////////////////////////////////////////////////////////\n\n\n\n\n\n\n\n\n\n\n///////////////////////////////////////////////////////////////\ndocument.addEventListener('DOMContentLoaded', () => {\n  const title = document.getElementById(\"title-container\")\n  Object(_header_header__WEBPACK_IMPORTED_MODULE_0__[\"generateHeader\"])(title)\n\n  const subheader = document.getElementById(\"navigation\")\n  Object(_header_subheader_items__WEBPACK_IMPORTED_MODULE_1__[\"generateSubheader\"])(subheader)\n\n\n  const subtitle = document.getElementById(\"subtitle\")\n  Object(_subtitle_subtitle__WEBPACK_IMPORTED_MODULE_3__[\"generateSubtitle\"])(subtitle)\n\n  const description = document.getElementById(\"description\")\n  Object(_description_description__WEBPACK_IMPORTED_MODULE_2__[\"generateDescription\"])(description)\n\n\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/slideshow/slideshow.js":
+/*!************************************!*\
+  !*** ./src/slideshow/slideshow.js ***!
+  \************************************/
+/*! exports provided: showSlides */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"showSlides\", function() { return showSlides; });\n//\n\n\n// this is the code that actually RUNS the slideshow\n// image slideshow - automatic\nvar slideIndex = 0;\nshowSlides();\n\nfunction showSlides() {\n  var i;\n  var slides = document.getElementsByClassName(\"mySlides\");\n\n  for (i = 0; i < slides.length; i++) {\n    slides[i].style.display = \"none\";\n  }\n  slideIndex++;\n  if (slideIndex > slides.length) {slideIndex = 1}\n  slides[slideIndex-1].style.display = \"block\";\n  setTimeout(showSlides, 3000); // Change image every 3 seconds\n}\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/slideshow/slideshow.js?");
 
 /***/ }),
 
@@ -142,7 +154,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hea
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateSubtitle\", function() { return generateSubtitle; });\n///////////////////////////////////////////////////////////////\nconst generateSubtitle = (htmlElement) => {\n  const pageSubtitle = document.createElement(\"h1\")\n  pageSubtitle.id = \"main-header\"\n  pageSubtitle.innerHTML = \"welcome to the show tracker site\"\n  htmlElement.appendChild(pageSubtitle)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/subtitle/subtitle.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"generateSubtitle\", function() { return generateSubtitle; });\n///////////////////////////////////////////////////////////////\n// *todo* add to constants\nconst generateSubtitle = (htmlElement) => {\n  const pageSubtitle = document.createElement(\"h1\")\n  pageSubtitle.id = \"main-header\"\n  pageSubtitle.innerHTML = \"welcome to the show tracker site\"\n  htmlElement.appendChild(pageSubtitle)\n}\n\n///////////////////////////////////////////////////////////////\n\n\n\n//# sourceURL=webpack:///./src/subtitle/subtitle.js?");
 
 /***/ })
 

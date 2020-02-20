@@ -1,3 +1,7 @@
+//
+
+
+// this is the code that actually RUNS the slideshow
 // image slideshow - automatic
 var slideIndex = 0;
 showSlides();

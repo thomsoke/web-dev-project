@@ -7,6 +7,8 @@ import { generateDescription } from './description/description'
 import { generateSubtitle } from './subtitle/subtitle'
 
 
+import { showSlides } from './slideshow/slideshow'
+
 ///////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
   const title = document.getElementById("title-container")
