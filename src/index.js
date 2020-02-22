@@ -2,13 +2,10 @@
 import { generateHeader } from './header/header'
 import { generateSubheader } from './header/subheader-items'
 
-
 import { generateDescription } from './description/description'
 import { generateSubtitle } from './subtitle/subtitle'
 
-
-// import { viewSlideshow } from './slideshow/slideshow'
-import { generateSlideshow } from './slideshow/slideshow'
+import { generateSlideshow, displaySlides } from './slideshow/slideshow'
 
 ///////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,19 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const subheader = document.getElementById("navigation")
   generateSubheader(subheader)
 
-
   const subtitle = document.getElementById("subtitle")
   generateSubtitle(subtitle)
 
   const description = document.getElementById("description")
   generateDescription(description)
 
-
-
-  // const slideshow = document.getElementById("slideshow")
-  // viewSlideshow(slideshow)
-  const slideshow = document.getElementById("slideshow")
+  const slideshow = document.getElementById("slideshow-container")
   generateSlideshow(slideshow)
-
-
+  displaySlides()
 });
