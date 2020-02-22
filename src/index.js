@@ -1,10 +1,11 @@
 ///////////////////////////////////////////////////////////////
 import { generateHeader } from './header/header'
 import { generateSubheader } from './header/subheader-items'
+
 import { generateDescription } from './description/description'
 import { generateSubtitle } from './subtitle/subtitle'
 
-import { showSlides } from './slideshow/slideshow'
+import { generateSlideshow, displaySlides } from './slideshow/slideshow'
 
 ///////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,9 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const description = document.getElementById("description")
   generateDescription(description)
 
-
-  const slideshow = document.getElementById("slideshow")
-  showSlides(slideshow)
-
-
+  const slideshow = document.getElementById("slideshow-container")
+  generateSlideshow(slideshow)
+  displaySlides()
 });
