@@ -33,6 +33,10 @@ const generateSlideshowItemElement = (metadataItem) => {
   const parentDiv = makeElement("div", "class", "my-slides")
   const childSlideNumberDiv = makeElement("div", "class", "numbertext")
   const childImage = makeElement("img", "src", source)
+
+  // childImage.setAttribute("style", "max-width: 75%")
+  childImage.setAttribute("class", "slideshow-image")
+
   const childCaptionDiv = makeElement("div", "text", caption)
 
   parentDiv.appendChild(childSlideNumberDiv)
