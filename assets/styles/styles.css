@@ -50,18 +50,54 @@ body {
 
 
 #subtitle {
-  padding-left: 20px
+  padding-left: 20px;
 }
 
 #description {
-  padding-left: 20px
-  padding-right: 20px
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
+#scrollbox {
+  background: #25b8b0;
+  border: 2px double black;
+  border-style: double;
+  height: 250px;
+  width: 350px;
+  /* padding: 5px 5px 5px 10px; */
+  margin: 30px;
+  overflow-y: scroll;
+}
 
+#scrollbox-contents {
+  /* overflow: hidden;
+  background-color: #333333;
+  font-size: 20px;
+  font-variant: small-caps;
+  color: #25b8b0;
+  padding: 0px 20px; */
+}
 
+.scrollbox-header {
 
+  font-size: 26px;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  color: black;
+  /* padding: 5px 5px 5px 10px; */
+}
+
+.scrollbox-subentry {
+  font-size: 11px;
+  /* font-variant: small-caps;
+  font-weight: bold; */
+  text-align: center;
+  color: black;
+  padding: 5px 5px 5px 20px;
+}
 
 
 /* #slideshow-container {

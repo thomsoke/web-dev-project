@@ -8,6 +8,8 @@ import { generateSubtitle } from "./subtitle/subtitle"
 
 import { generateSlideshow, displaySlides } from "./slideshow/slideshow"
 
+import { generateScrollbox } from "./text-boxes/scrollbox-text"
+
 ///////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", () => {
   const title = document.getElementById("title-container")
@@ -25,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const slideshow = document.getElementById("slideshow-container")
   generateSlideshow(slideshow)
   displaySlides()
+
+  const scrollbox = document.getElementById("scrollbox")
+
+
+
 
   // "home" is the default page to show
   navigateToSubPage("home")
