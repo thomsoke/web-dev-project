@@ -96,6 +96,15 @@ body {
   font-weight: bold; */
   text-align: center;
   color: black;
+  margin: 15px;
+}
+
+#upcoming-shows-list {
+  font-size: 11px;
+  /* font-variant: small-caps;
+  font-weight: bold; */
+  text-align: center;
+  color: black;
   padding: 5px 5px 5px 20px;
 }
 

@@ -8,7 +8,8 @@ import { generateSubtitle } from "./subtitle/subtitle"
 
 import { generateSlideshow, displaySlides } from "./slideshow/slideshow"
 
-import { generateScrollbox } from "./text-boxes/scrollbox-text"
+import { generateScrollbox } from "./scrollbox/scrollbox"
+import { generateScrollboxHeader, generateScrollboxSubentry, generateScrollboxList } from "./scrollbox/scrollbox"
 
 ///////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,8 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
   displaySlides()
 
   const scrollbox = document.getElementById("scrollbox")
+  generateScrollbox()
 
 
+
+const scrollboxHeader = document.getElementById("scrollbox-header")
+const scrollboxSubentry = document.getElementById("scrollbox-subentry")
+const upcomingShowsList= document.getElementById("upcoming-shows-list")
+  generateScrollboxHeader()
+  generateScrollboxSubentry()
+  generateScrollboxList()
 
 
   // "home" is the default page to show
