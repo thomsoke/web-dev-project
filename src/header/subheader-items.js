@@ -59,7 +59,7 @@ const fillSubheaderArray = (metadataItems) => {
 ///////////////////////////////////////////////////////////////
 const generateSubheader = (htmlElement) => {
   const subheader = document.createElement("div")
-  subheader.id = "sub-header"
+  subheader.id = "subheader"
 
   const subheaderItems = fillSubheaderArray(METADATA_ITEMS)
 

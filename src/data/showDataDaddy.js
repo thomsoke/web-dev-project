@@ -1,100 +1,101 @@
 
 const show1 = {
   id: "showId1",
-  date: "friday, march 13",
-  band: "jason lytle (solo set)",
-  venue: "mississippi studios"
+  date: "thursday, february 27",
+  band: "gunk",
+  venue: "high water mark"
 }
 
 const show2 = {
   id: "showId2",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "monday, march 2",
+  band: "best coast",
+  venue: "wonder ballroom"
 }
 
 const show3 = {
   id: "showId3",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "monday, march 9",
+  band: "the strokes",
+  venue: "wamu theater"
 }
 
 const show4 = {
   id: "showId4",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "friday, march 13",
+  band: "jason lytle",
+  venue: "mississippi studios"
+
 }
 
 const show5 = {
   id: "showId5",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "thursday, march 26",
+  band: "treefort music fest",
+  venue: "boise"
 }
 
 const show6 = {
   id: "showId6",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "sunday, april 19",
+  band: "king gizzard and the lizard wizard",
+  venue: "crystal ballroom"
 }
 
 const show7 = {
   id: "showId7",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "saturday, april 25",
+  band: "joyce manor",
+  venue: "polaris hall"
 }
 
 const show8 = {
   id: "showId8",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "thursday, april 30",
+  band: "deafheaven",
+  venue: "wonder ballroom"
 }
 
 const show9 = {
   id: "showId9",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "saturday, may 2",
+  band: "sturgill simpson & tyler childers",
+  venue: "gorge ampitheater"
 }
 
 const show10 = {
   id: "showId10",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "saturday, may 9",
+  band: "power trash",
+  venue: "bit house saloon"
 }
 
 const show11 = {
   id: "showId11",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "thursday, may 14",
+  band: "wavves",
+  venue: "wonder ballroom"
 }
 
 const show12 = {
   id: "showId12",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "friday, may 29",
+  band: "fuzz",
+  venue: "aladdin theater"
 }
 
 const show13 = {
   id: "showId13",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "friday, june 12",
+  band: "swans",
+  venue: "revolution hall"
 }
 
 const show14 = {
   id: "showId14",
-  date: "hold date",
-  band: "hold band",
-  venue: "hold venue"
+  date: "friday, august 7",
+  band: "tame impala",
+  venue: "gorge ampitheater"
 }
 
 
