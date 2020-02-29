@@ -29,6 +29,10 @@ const makeUL = () => {
   let array = extractShowInfo(upcomingShowsArray)
   const upcomingShowsList = makeElement("ul", "class", "upcoming-shows-list")
 
+  const scrollboxHeader = makeElement("h1", "id", "scrollbox-header")
+  scrollboxHeader.innerHTML = "Upcoming Shows"
+  upcomingShowsList.appendChild(scrollboxHeader)
+
   for (let i = 0; i < array.length; i++) {
     const newListItem = makeElement("li", "class", "upcoming-show")
     newListItem.appendChild(document.createTextNode(array[i]))
